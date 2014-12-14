@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<info>
+	<id>files_hubic</id>
+	<name>Hubic external storage support</name>
+	<description>
+		Owncloud external storage support: HubiC cloud service.
+
+		Hubic is an online storage service by OVH.
+		Plans start with 25 GB free.
+		More information about HubiC on http://hubic.com .
+
+		This app provides you  the ability to mount your Hubic storage into your OwnCloud instance through the "External Storage Support" of OwnCloud.
+		Note: neither this app or its author are affiliated with or related to OVH.
+	</description>
+	<licence>AGPL</licence>
+	<author>Alexandre Relange</author>
+	<requiremin>7</requiremin>
+	<types>
+		<filesystem/>
+	</types>
+	<website>https://github.com/arelange/owncloud-files-hubic</website>
+</info>
