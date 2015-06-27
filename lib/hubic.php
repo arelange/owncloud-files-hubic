@@ -308,6 +308,12 @@ class Hubic extends \OC\Files\Storage\Common {
 
 	public function stat($path) {
 		$path = $this->normalizePath($path);
+  
+                if ($path === '.') {
+                        $path = '';
+                } else if ($this->is_dir($path)) {
+                        $path .= '/';
+                }
 
 		try {
 			$object = $this->getContainer()->getPartialObject($path);
