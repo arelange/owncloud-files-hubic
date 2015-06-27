@@ -200,9 +200,9 @@ class Hubic extends \OC\Files\Storage\Common {
 	}
 
 	public function __construct($params) {
-		if (isset($params['configured']) && $params['configured'] === 'true'
-			&& isset($params['client_id']) && isset($params['client_secret'])
-			&& isset($params['hubic_token'])
+		if (!empty($params['configured']) && $params['configured'] === 'true'
+			&& !empty($params['client_id']) && !empty($params['client_secret'])
+			&& !empty($params['hubic_token'])
 		) {
 			$this->id = 'hubic::' . $params['client_id'] . md5('default');
 			$this->bucket = 'default';
