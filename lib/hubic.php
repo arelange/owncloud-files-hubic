@@ -78,7 +78,7 @@ class Hubic extends \OC\Files\Storage\Common {
 		return $path;
 	}
 
-	const SUBCONTAINER_FILE='.subcontainers';
+	const SUBCONTAINER_FILE = '.subcontainers';
 
 	/**
 	 * saves mount configuration
@@ -182,7 +182,7 @@ class Hubic extends \OC\Files\Storage\Common {
 	 * @return string
 	 */
 	private function getContainerName($path) {
-		$path=trim(trim($this->root, '/') . "/".$path, '/.');
+		$path = trim(trim($this->root, '/') . "/".$path, '/.');
 		return str_replace('/', '\\', $path);
 	}
 
@@ -333,7 +333,7 @@ class Hubic extends \OC\Files\Storage\Common {
 		}
 
 		$stat = array();
-		$stat['size'] = (int) $object->getContentLength();
+		$stat['size'] = (int)$object->getContentLength();
 		$stat['mtime'] = $mtime;
 		$stat['atime'] = time();
 		return $stat;
@@ -474,7 +474,7 @@ class Hubic extends \OC\Files\Storage\Common {
 
 			try {
 				$source = $this->getContainer()->getPartialObject($path1);
-				$source->copy($this->bucket.'/'.$path2);
+				$source->copy($this->bucket . '/' . $path2);
 			} catch (ClientErrorResponseException $e) {
 				\OCP\Util::writeLog('files_hubic', $e->getMessage(), \OCP\Util::ERROR);
 				return false;
@@ -487,7 +487,7 @@ class Hubic extends \OC\Files\Storage\Common {
 
 			try {
 				$source = $this->getContainer()->getPartialObject($path1);
-				$source->copy($this->bucket.'/'.$path2);
+				$source->copy($this->bucket . '/' . $path2);
 			} catch (ClientErrorResponseException $e) {
 				\OCP\Util::writeLog('files_hubic', $e->getMessage(), \OCP\Util::ERROR);
 				return false;
