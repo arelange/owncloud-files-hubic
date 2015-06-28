@@ -86,8 +86,10 @@ $(document).ready(function() {
 				|| $(tr).find('.chzn-select').val() != null))
 			{
 				if ($(tr).find('.hubic').length == 0) {
-					$(config).append($('<a/>').addClass('button hubic')
-						.text(t('files_external', 'Grant access')));
+					$(config).append($(document.createElement('input'))
+						.addClass('button hubic')
+						.attr('type', 'button')
+						.attr('value',t('files_external', 'Grant access')));
 				} else {
 					$(tr).find('.hubic').show();
 				}
