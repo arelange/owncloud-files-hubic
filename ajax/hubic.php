@@ -4,7 +4,7 @@ OCP\JSON::checkAppEnabled('files_external');
 OCP\JSON::checkAppEnabled('files_hubic');
 OCP\JSON::checkLoggedIn();
 OCP\JSON::callCheck();
-$l = OC_L10N::get('files_external');
+$l = \OC::$server->getL10N('files_external');
 
 if (isset($_POST['client_id']) && isset($_POST['client_secret']) && isset($_POST['redirect'])) {
 	if (isset($_POST['step'])) {

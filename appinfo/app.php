@@ -1,11 +1,11 @@
 <?php
 /**
- * Copyright (c) 2014 Alexandre Relange <alexandre@relange.org>
+ * Copyright (c) 2014, 2015 Alexandre Relange <alexandre@relange.org>
  * This file is licensed under the Affero General Public License version 3 or
  * later.
  * See the COPYING-README file.
  */
-$l = \OC_L10N::get('files_hubic');
+$l = \OC::$server->getL10N('files_hubic');
 
 OC::$CLASSPATH['OC\Files\Storage\Hubic'] = 'files_hubic/lib/hubic.php';
 
