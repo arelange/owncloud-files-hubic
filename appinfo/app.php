@@ -23,7 +23,7 @@ OC_Mount_Config::registerBackend('\OC\Files\Storage\Hubic', [
 	'configuration' => [
 		'configured' => '#configured',
 		'client_id' => (string)$l->t('Client ID'),
-		'client_secret' => '*'.$l->t('Client secret'),
+		'client_secret' => '&*'.$l->t('Client secret'),
 		'hubic_token' => '#hubic token',
 		'swift_token' => '#swift token'
 	],
