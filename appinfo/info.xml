@@ -19,4 +19,6 @@
 		<filesystem/>
 	</types>
 	<website>https://github.com/arelange/owncloud-files-hubic</website>
+    <ocsid>168188</ocsid>
+    <repository type="git">https://github.com/arelange/owncloud-files-hubic.git</repository>
 </info>
